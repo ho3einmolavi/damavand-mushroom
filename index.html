@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه فرود صنایع غذایی دماوند</title>
+    <!-- وارد کردن فونت Vazirmatn از Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- وارد کردن Tailwind CSS از طریق CDN رسمی -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- پیکربندی Tailwind برای استفاده از فونت Vazirmatn و رنگ‌های برند -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Vazirmatn', 'sans-serif'],
+                    },
+                    colors: {
+                        'earthy-brown': '#6F4E37',       /* Earthy Brown */
+                        'deep-olive-green': '#556B2F',   /* Deep Olive Green */
+                        'creamy-beige': '#F5F5DC',       /* Creamy Beige */
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- وارد کردن AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body class="font-sans bg-creamy-beige text-earthy-brown overflow-x-hidden">
+
+    <!-- بخش بنر با تصویر پس‌زمینه -->
+    <section class="h-screen relative flex items-center justify-center text-white text-center px-4" data-aos="fade-in">
+        <!-- تصویر پس‌زمینه -->
+        <img src="/images/banner.jpg" alt="بنر صنایع غذایی دماوند" class="absolute inset-0 w-full h-full object-cover max-w-full">
+        <!-- پوشش نیمه‌شفاف برای افزایش خوانایی متن -->
+        <div class="absolute inset-0 bg-earthy-brown opacity-50"></div>
+        <!-- محتوای بنر -->
+        <div class="relative z-10 max-w-full">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">به صنایع غذایی دماوند خوش آمدید</h1>
+            <p class="text-lg md:text-2xl">مجموعه‌ای از محصولات استثنایی ما را کشف کنید که به‌طور خاص برای شما طراحی شده‌اند.</p>
+        </div>
+    </section>
+
+    <!-- بخش لیست محصولات -->
+    <section class="py-16 bg-creamy-beige px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-semibold text-center text-deep-olive-green mb-12" data-aos="fade-up">محصولات ما</h2>
+        <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+            <!-- محصول 1 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300" data-aos="zoom-in">
+                <img src="/images/product1.jpg" alt="محصول 1" class="w-full h-60 object-cover max-w-full">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-earthy-brown mb-2">محصول اول</h3>
+                    <p class="text-gray-600">محصول با کیفیت بالا از دسته‌ی محصولات قارچی دماوند.</p>
+                </div>
+            </div>
+            <!-- محصول 2 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300" data-aos="zoom-in" data-aos-delay="100">
+                <img src="/images/product2.jpg" alt="محصول 2" class="w-full h-60 object-cover max-w-full">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-earthy-brown mb-2">محصول دوم</h3>
+                    <p class="text-gray-600">محصول ارگانیک و طبیعی قارچی دماوند.</p>
+                </div>
+            </div>
+            <!-- محصول 3 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300" data-aos="zoom-in" data-aos-delay="200">
+                <img src="/images/product3.jpg" alt="محصول 3" class="w-full h-60 object-cover max-w-full">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-earthy-brown mb-2">محصول سوم</h3>
+                    <p class="text-gray-600">تولید محصول با بهترین استانداردهای کیفی از قارچ‌های دماوند.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-creamy-beige px-4 sm:px-6 lg:px-8" id="about-us" >
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-deep-olive-green mb-6" data-aos="fade-down">درباره ما</h2>
+            <p class="text-earthy-brown leading-relaxed text-lg" data-aos="fade-down">
+                صنایع غذایی دماوند با بهره‌گیری از دانش روز و تلاش متخصصان برجسته، به ارائه محصولات غذایی با کیفیت
+                برای رفع نیازهای خانواده‌های ایرانی و افزایش سلامت جامعه پرداخته است. هدف ما تولید محصولاتی سالم،
+                طبیعی و با کیفیت عالی است که با استانداردهای جهانی مطابقت دارد و رضایت شما عزیزان را جلب کند.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-16 bg-deep-olive-green px-4 sm:px-6 lg:px-8" id="contact-us" data-aos="fade-up">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-creamy-beige mb-6">تماس با ما</h2>
+            <p class="text-creamy-beige leading-relaxed text-lg mb-8">
+                برای سفارش محصولات یا هرگونه سوال و مشاوره، می‌توانید با تیم پشتیبانی ما در تماس باشید. ما همیشه آماده
+                پاسخگویی به نیازهای شما هستیم.
+            </p>
+            <!-- Call to Action Button -->
+            <div class="flex items-center justify-center">
+                <a href="tel:1234567890" class="bg-earthy-brown hover:bg-creamy-beige hover:text-earthy-brown text-creamy-beige font-bold py-3 px-6 rounded focus:outline-none transition-colors duration-300 text-lg">
+                    تماس با پشتیبانی فروش
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- فوتر -->
+    <footer class="bg-black text-creamy-beige py-8">
+        <div class="max-w-4xl mx-auto text-center space-y-6">
+            <!-- Company Rights -->
+            <p class="text-sm">&copy; ۱۴۰۳ صنایع غذایی دماوند. کلیه حقوق محفوظ است.</p>
+            
+            <!-- Contact Information with Icons -->
+            <div class="flex items-center justify-center space-x-8 text-creamy-beige text-center">
+                <!-- Address Icon -->
+                <a href="https://goo.gl/maps/your-address" target="_blank" class="hover:text-deep-olive-green">
+                    <i class="fas fa-map-marker-alt text-2xl"></i>
+                </a>
+                
+                <!-- Phone Icon -->
+                <a href="tel:1234567890" class="hover:text-deep-olive-green">
+                    <i class="fas fa-phone text-2xl"></i>
+                </a>
+                
+                <!-- Instagram Icon -->
+                <a href="https://www.instagram.com/damavandfood" target="_blank" class="hover:text-deep-olive-green">
+                    <i class="fab fa-instagram text-2xl"></i>
+                </a>
+                
+                <!-- WhatsApp Icon -->
+                <a href="https://wa.me/1234567890" target="_blank" class="hover:text-deep-olive-green">
+                    <i class="fab fa-whatsapp text-2xl"></i>
+                </a>
+            </div>
+            
+            <!-- Additional Contact Info -->
+            <div class="text-sm space-y-1 text-center">
+                <p>تلفن: 1234567890</p>
+                <p>آدرس: تهران، ایران، خیابان دماوند، پلاک ۱۲۰</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+    <!-- وارد کردن AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            mirror: false
+        });
+    </script>
+</body>
+</html>
